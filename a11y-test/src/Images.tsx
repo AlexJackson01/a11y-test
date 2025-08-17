@@ -4,7 +4,9 @@ export const Images = () => {
   return (
     <>
       <Image />
-      <Image alt="image of" accessibilityLabel="Image of" />
+      <Image alt="image of" />
+
+      <Image />
     </>
   );
 };
