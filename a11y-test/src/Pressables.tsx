@@ -16,29 +16,35 @@ export const Pressables = ({ title, text }: PressablesProps) => {
     <>
       <TouchableOpacity
         onPress={() => {}}
+        accessibilityLabel="Click me"
+        accessibilityRole="button"
       >
         <Text>Click me</Text>
       </TouchableOpacity>
 
       <TouchableHighlight
         onPress={() => {}}
+        accessibilityLabel="Press me"
+        accessibilityRole="button"
       >
         <Text>press ME</Text>
       </TouchableHighlight>
 
-      <Button title="SAVE" />
+      <Button title="SAVE" accessibilityLabel="Save" />
 
-      <Pressable onPress={() => {}} />
+      <Pressable onPress={() => {}} accessibilityRole="button" />
 
-      <Button title={title} />
+      <Button title={title} accessibilityLabel={title} />
 
       <Button
         title={startOfDay(new Date()).toISOString()}
+        accessibilityLabel={startOfDay(new Date()).toISOString()}
       />
 
       <Pressable
         onPress={() => {}}
         accessibilityRole="click"
+        accessibilityLabel={text}
       >
         <Text>{text}</Text>
       </Pressable>

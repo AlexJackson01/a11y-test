@@ -16,10 +16,10 @@ export const Views = () => {
       </View>
 
       <View accessible>
-        <Pressable>Hello</Pressable>
+        <Pressable accessibilityRole="button">Hello</Pressable>
       </View>
 
-      <View accessible>
+      <View accessible accessibilityLabel="Hello">
         <Text>Hello</Text>
       </View>
 
@@ -29,9 +29,9 @@ export const Views = () => {
         </Text>
       </View>
 
-      <Switch />
+      <Switch accessibilityRole="switch" />
 
-      <Switch aria-checked />
+      <Switch aria-checked accessibilityRole="switch" />
 
       <ActivityIndicator accessibilityRole="spinner" />
     </>
