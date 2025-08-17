@@ -1,0 +1,23 @@
+name: Accessibility Audit
+on:
+  pull_request:
+    paths:
+      - '**/*.tsx'
+      - '**/*.jsx'
+
+jobs:
+  accessibility-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Changed from 'read' to 'write' for pushing commits
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref }}  # Checkout the PR branch, not main
+          fetch-depth: 0
+      
+      - uses: AlexJackson01/rn-a11y-audit/.github/actions/a11y-audit@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
