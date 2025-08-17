@@ -3,5 +3,8 @@
     "version": "1.0.0",
     "description": "Test repo for accessibility auditing",
     "scripts": {},
-    "dependencies": {}
-  }
+    "dependencies": {
+        "date-fns": "^4.1.0",
+        "rn-a11y-audit": "github:AlexJackson01/rn-a11y-audit"
+    }
+}
