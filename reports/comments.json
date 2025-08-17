@@ -1,0 +1,58 @@
+[
+  {
+    "type": "accessibilityLabel",
+    "tag": "Image",
+    "line": 6,
+    "text": "@RN-AUDIT-LABEL: Add an accessibilityLabel and alt text to your Image",
+    "location": "a11y-test/src/Images.tsx"
+  },
+  {
+    "type": "accessibilityLabel",
+    "tag": "Image",
+    "line": 13,
+    "text": "@RN-AUDIT-LABEL: Add an accessibilityLabel and alt text to your Image",
+    "location": "a11y-test/src/Images.tsx"
+  },
+  {
+    "type": "accessibilityHint",
+    "tag": "TouchableOpacity",
+    "line": 17,
+    "text": "@RN-AUDIT-HINT: Add an accessibilityHint",
+    "location": "a11y-test/src/Pressables.tsx"
+  },
+  {
+    "type": "accessibilityHint",
+    "tag": "TouchableHighlight",
+    "line": 25,
+    "text": "@RN-AUDIT-HINT: Add an accessibilityHint",
+    "location": "a11y-test/src/Pressables.tsx"
+  },
+  {
+    "type": "accessibilityLabel",
+    "tag": "Pressable",
+    "line": 35,
+    "text": "@RN-AUDIT-LABEL: Add an accessibilityLabel",
+    "location": "a11y-test/src/Pressables.tsx"
+  },
+  {
+    "type": "accessibilityHint",
+    "tag": "Pressable",
+    "line": 35,
+    "text": "@RN-AUDIT-HINT: Add an accessibilityHint",
+    "location": "a11y-test/src/Pressables.tsx"
+  },
+  {
+    "type": "accessibilityHint",
+    "tag": "Pressable",
+    "line": 44,
+    "text": "@RN-AUDIT-HINT: Add an accessibilityHint",
+    "location": "a11y-test/src/Pressables.tsx"
+  },
+  {
+    "type": "accessibilityRole",
+    "tag": "Pressable",
+    "line": 44,
+    "text": "@RN-AUDIT-ROLE: <Pressable> on line 44 has an invalid accessibilityRole \"click\".  Suggested: \"button\".",
+    "location": "a11y-test/src/Pressables.tsx"
+  }
+]

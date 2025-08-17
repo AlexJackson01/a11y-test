@@ -3,10 +3,14 @@ import { Image } from "react-native";
 export const Images = () => {
   return (
     <>
-      <Image />
-      <Image alt="image of" />
+      <Image accessibilityRole="image" />
+      <Image
+        alt="image of"
+        accessibilityLabel="Image of"
+        accessibilityRole="image"
+      />
 
-      <Image />
+      <Image accessibilityRole="image" />
     </>
   );
 };
