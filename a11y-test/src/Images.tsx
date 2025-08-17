@@ -5,6 +5,8 @@ export const Images = () => {
     <>
       <Image />
       <Image alt="image of" accessibilityLabel="Image of" />
+
+      <Image />
     </>
   );
 };

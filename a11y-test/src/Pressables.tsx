@@ -7,7 +7,6 @@ import {
   Pressable,
   TouchableHighlight,
 } from "react-native";
-import { hasProp } from "../helpers/hasProp";
 type PressablesProps = {
   title: string;
   text: string;
@@ -32,12 +31,6 @@ export const Pressables = ({ title, text }: PressablesProps) => {
       <Pressable onPress={() => {}} />
 
       <Button title={title} />
-
-      <Pressable
-        onPress={() => {}}
-      >
-        <Text>{hasProp("accessibilityLabel", []) ? "Hello" : "Goodbye"}</Text>
-      </Pressable>
 
       <Button
         title={startOfDay(new Date()).toISOString()}
